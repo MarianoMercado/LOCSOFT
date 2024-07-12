@@ -1,0 +1,49 @@
+﻿/*------------------------------- Tablet -----------------------------*/
+@media (max-width: 992px) {
+
+    .menu-icon {
+        display: flex
+    }
+
+    .navbar-list {
+        /*position: absolute;*/
+        top: 65px;
+        right: 0;
+        width: 40%;
+        height: 60%;
+        flex-direction: column;
+        background-color: var(--nav-bg);
+        border: 2px solid var(--dorado);
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: center;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    #hero div {
+        width: 100% !important;
+    }
+
+    #container_img {
+        display: none !important;
+    }
+
+    .open-Navbar {
+        display: flex;
+    }
+}
+
+
+/*----------------------------- Celu -----------------------------*/
+@media (max-width: 576px) {
+    
+    }
+
+
+
+/*----------------------------- disp small -----------------------------*/
+@media (max-width: 450px) {
+}

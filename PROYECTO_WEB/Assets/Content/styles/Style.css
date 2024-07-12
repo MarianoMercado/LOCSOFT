@@ -1,0 +1,254 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;600;700&family=Kdam+Thmor+Pro&family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+
+
+:root {
+    --back: #000000;
+    --bg-black: rgba(7, 6, 6, 0.8);
+    --bg-black-ligth: #252525;
+    --white: #ffffff;
+    --white-ligth: #fbfbfb77;
+    --marron: #3b3b3b;
+    --gray: #404244;
+    --mist: #90afc5;
+    --stone: #336b87;
+    --shadow: #2a3132;
+    --autumn-foliage: #763626;
+    --msj-succes: rgba(10, 248, 10, 0.8);
+    --msj-warning: rgba(233, 207, 10, 0.8);
+    --msj-error: rgba(237, 9, 9, 0.8);
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+    /* Text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+    /* Decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+    --dorado: #ffd700;
+}
+
+/*-------------------------navbar ------------------------*/
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 65px; 
+    z-index: 99;
+    transition: 0.3s;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.navbar-list {
+    gap: 30px;
+    font-size: 30px;
+    font-weight:600
+}
+
+    .navbar-list a {
+        color: var(--text-gray);
+        font-size: 20px;
+    }
+
+    .navbar-list li:first-child > a {
+        color: var(--text-white);
+        font-weight: 600;
+    }
+
+/* hover link */
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    height: 2px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: 0.3s;
+    background-color: var(--background);
+}
+
+.navbar-link:hover::after {
+    transform: scaleX(1);
+}
+/*Hover de los elementos "a" del navbar*/
+.navbar-list li {
+    position: relative;
+    padding: 0;
+}
+
+    .navbar-list li a::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: var(--text-gray);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.15s ease;
+    }
+
+    .navbar-list li a:hover::after {
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
+
+.logo_container span {
+    background: linear-gradient(to top, var(--msj-error), var(--dorado));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 20px;
+}
+.logo_container p {
+    font-size: 14px;
+    color: var(--white);
+}
+.img-logo {
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)); /* Color dorado con transparencia */
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: var(--white);
+    display:none
+}
+
+/*------------------------- inicio ------------------------*/
+
+#hero {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-family: "Poppins", sans-serif;
+    padding-top: 65px;
+    height: 100vh;
+    font-size: 20px;
+    background-image: url("../img/bg-computers-black.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*Coloca la superposición detrás del contenido */
+}
+
+
+   /* #hero::before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);  
+        z-index: -1; 
+    }*/
+    #hero h1 {
+        color: var(--white);
+        font-weight: 900;
+        text-align: center;
+      
+    }
+#container_img span{
+    background: linear-gradient(to top, var(--msj-error), var(--dorado));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 48px;
+}
+
+#hero p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+
+#hero .hero-info-btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: var(--white);
+}
+#hero .btn-more {
+    position: relative;
+    display: inline-block;
+    color: var(--white);
+    width: 120px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+    filter: none;
+    outline: 2px solid var(--white);
+}
+
+
+    #hero .btn-more:hover {
+        color: var(--dorado);
+        transition: all 0.2s ease-in;
+        outline: 2px solid var(--dorado);
+        box-shadow: 0 5px 5px var(--dorado);
+        box-shadow: var(--white) 0 0 5px;
+    }
+
+
+/*///////////////////////////// servicios*/
+
+#servicios{
+    display:flex;
+    flex-direction:column;
+    gap:35px
+}
+
+.servicios_Container {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+#servicios h1 {
+    color: var(--white);
+    font-weight: 900;
+    text-align: center;
+}
+
+.card_Servicios {
+    border-radius: 16px;
+    box-shadow: 0 5px 5px var(--dorado);
+    box-shadow: var(--back) 0 0 10px;
+        color: var(--background);
+}
+
+    .card_Servicios img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card_Servicios h5 {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Kdam Thmor Pro", sans-serif;
+    }
+    .card_Servicios p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }

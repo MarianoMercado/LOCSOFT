@@ -1,0 +1,54 @@
+﻿html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 65px;
+}
+
+/* Animacion al h1 */
+#hero h1 {
+    /*animacion - duración - animation-function*/
+    animation: fade 1s ease-in, slide-right 1.3s ease-in-out;
+}
+#container_description p {
+    /*animacion - duración - animation-function*/
+    animation: fade 1s ease-in, slide-up 1.7s ease-in-out;
+}
+.hero-info-btn {
+    animation: fade 1s ease-in, slide-up 2s ease-in-out;
+}
+/*------------------ Animaciones --------------------*/
+/* Animacion fade */
+/*Funcionamiento: pasa de opacidad 0 a opacidad 1*/
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animacion slide arriba */
+/*Funcionamiento: Hacemos llegar al elemento animado desde abajo*/
+@keyframes slide-up {
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Animacion slide derecha */
+/*Funcionamiento: Hacemos llegar al elemento animado desde la derecha*/
+
+@keyframes slide-right {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
