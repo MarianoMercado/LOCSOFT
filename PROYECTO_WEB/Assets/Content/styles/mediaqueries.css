@@ -4,10 +4,12 @@
     .menu-icon {
         display: flex
     }
-
+    .navbar {
+        height: 150px
+    }
     .navbar-list {
         /*position: absolute;*/
-        top: 65px;
+        top: 150px;
         right: 0;
         width: 40%;
         height: 60%;
@@ -22,10 +24,42 @@
         z-index: 2;
         display: none;
     }
+    .img-logo {
+        height: 150px
+    }
+
+    .logo_container span {
+        font-size: 40px;
+    }
+
+    .logo_container p {
+        font-size: 30px;
+    }
+
+
 
     #hero div {
         width: 100% !important;
+        align-items: start !important;
+        margin-top: 100px;
     }
+    #hero h1 {
+        font-size: 4.5rem;
+    }
+        #hero p {
+        font-size: 30px;
+    }
+
+
+    #hero .btn-more {
+        width: 191px;
+        height: 68px;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+
+
 
     #container_img {
         display: none !important;
@@ -46,4 +80,13 @@
 
 /*----------------------------- disp small -----------------------------*/
 @media (max-width: 450px) {
+
+    #hero {
+        justify-content:start;
+        align-items:start
+            
+    }
+        #hero div {
+            margin-top: 100px;
+        }
 }

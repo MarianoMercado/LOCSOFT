@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>LOCSOF Computer Solutions</title>
+    <title>LOCSOFT Computer Solutions</title>
 
     <%-- admin --%>
     <link href="Assets/Plugins/AdminLTE/dist/css/adminlte.min.css" rel="stylesheet" />
@@ -26,9 +26,9 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand  m-0 d-flex justify-content-between px-5 py-0 " id="nav">
             <div class="d-flex align-content-center">
-                <img src="Assets/Content/img/logo_1.png" style="height: 80px" class="img-logo" />
+                <img src="Assets/Content/img/logo_1.png"  class="img-logo" />
                 <div class="logo_container  d-flex flex-column justify-content-center align-items-center pt-2">
-                    <span class="text-center">LOCSOF</span>
+                    <span class="text-center">LOCSOFT</span>
                     <p>Computer Solutions</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
                 <div class="d-flex flex-column justify-content-center align-items-center" id="container_description">
                     <h1>DIGITALIZÁ TU NEGOCIO</h1>
-                    <p class="p-5">En LOCSOF, somos apasionados desarrolladores de software con 5 años de experiencia en el rubro. Nuestra misión es ofrecer sistemas y aplicaciones personalizadas para empresas, pymes y negocios de todos los rubros. Nos enorgullece satisfacer las necesidades de nuestros clientes a través de soluciones informáticas innovadoras y eficientes. </p>
+                    <p class="p-3">En LOCSOFT, somos apasionados desarrolladores de software con 5 años de experiencia en el rubro. Nuestra misión es ofrecer sistemas y aplicaciones personalizadas para empresas, pymes y negocios de todos los rubros. Nos enorgullece satisfacer las necesidades de nuestros clientes a través de soluciones informáticas innovadoras y eficientes. </p>
                 </div>
                 <div class="hero-info-btn">
                     <a href="#about" class="btn-more">Ver Más<i class="fas fa-arrow-down ml-1"></i>
@@ -60,7 +60,7 @@
             </div>
             <div class="d-flex flex-column justify-content-center align-items-center w-50" id="container_img">
                 <img src="Assets/Content/img/logo_2.png" style="height: 200px" class="img-logo" />
-                <span class="">LOCSOF</span>
+                <span class="">LOCSOFT</span>
                 <p>Computer Solutions</p>
             </div>
 
@@ -69,37 +69,30 @@
         <%-- servicios --%>
         <section class=" d-flex flex-column w-100 p-3 bg-dark" id="servicios">
             <h1>¿POR QUÉ ELEGIRNOS?</h1>
-            <div class="row w-100 servicios_Container">
-                <div class="col">
-                    <div class="card card_Servicios" style="width: 18rem;">
-                        <img src="Assets/Content/img/colaboracion.jpg" class="card-img-top" alt="LOCSOFT - calidad - software" />
-                        <div class="card-body">
-                            <h5 class="card-title ">Calidad</h5>
-                            <p class="card-text">Creamos software robusto y confiable que impulsa el éxito de nuestros clientes.</p>
+            <div class="row w-100  servicios_Container">
 
-                        </div>
+                <div class="card card_Servicios" style="width: 18rem;">
+                    <img src="Assets/Content/img/colaboracion.jpg" class="card-img-top" alt="LOCSOFT - calidad - software" />
+                    <div class="card-body">
+                        <h5 class="card-title ">Calidad</h5>
+                        <p class="card-text">Creamos software robusto y confiable que impulsa el éxito de nuestros clientes.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_Servicios" style="width: 18rem;">
-                        <img src="Assets/Content/img/negocios.jpg" class="card-img-top" alt="LOCSOFT - mercado - empresas" />
-                        <div class="card-body">
-                            <h5 class="card-title ">Adaptabilidad</h5>
-                            <p class="card-text">Nos adaptamos a las necesidades cambiantes del mercado y las empresas.</p>
-
-                        </div>
+                <div class="card card_Servicios" style="width: 18rem;">
+                    <img src="Assets/Content/img/negocios.jpg" class="card-img-top" alt="LOCSOFT - mercado - empresas" />
+                    <div class="card-body">
+                        <h5 class="card-title ">Adaptabilidad</h5>
+                        <p class="card-text">Nos adaptamos a las necesidades cambiantes del mercado y las empresas.</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card card_Servicios" style="width: 18rem;">
-                        <img src="Assets/Content/img/clientes.jpg" class="card-img-top" alt="LOCSOFT - clientes - software" />
-                        <div class="card-body">
-                            <h5 class="card-title ">Colaboración</h5>
-                            <p class="card-text">Trabajamos con nuestros clientes para lograr resultados excepcionales.</p>
-
-                        </div>
+                <div class="card card_Servicios" style="width: 18rem;">
+                    <img src="Assets/Content/img/clientes.jpg" class="card-img-top" alt="LOCSOFT - clientes - software" />
+                    <div class="card-body">
+                        <h5 class="card-title ">Colaboración</h5>
+                        <p class="card-text">Trabajamos con nuestros clientes para lograr resultados excepcionales.</p>
                     </div>
                 </div>
+
             </div>
 
         </section>
