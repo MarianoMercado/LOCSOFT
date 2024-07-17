@@ -1,8 +1,15 @@
 {
-  "trailingSlash": true
-  
-}
-
-{
-  "buildCommand": "next build"
+  "version": 2,
+  "builds": [
+    {
+      "src": "PROYECTO_WEB/**/*.aspx",
+      "use": "@vercel/dotnet"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/PROYECTO_WEB/index.aspx"
+    }
+  ]
 }
