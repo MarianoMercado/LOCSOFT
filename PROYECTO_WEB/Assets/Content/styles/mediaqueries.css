@@ -11,10 +11,11 @@
         /*position: absolute;*/
         top: 150px;
         right: 0;
-        width: 40%;
-        height: 60%;
+        width: 100%;
+        height: 80%;
         flex-direction: column;
-        background-color: var(--nav-bg);
+        justify-content: start;
+        background-color: var(--bg-black);
         border: 2px solid var(--dorado);
         border-top: 0px;
         border-radius: 0px 0px 15px 15px;
@@ -24,39 +25,21 @@
         z-index: 2;
         display: none;
     }
-    .img-logo {
-        height: 150px
-    }
-
-    .logo_container span {
-        font-size: 40px;
-    }
-
-    .logo_container p {
-        font-size: 30px;
-    }
+        .navbar-list a {
+            font-size: 2rem;
+        }
 
 
 
     #hero div {
         width: 100% !important;
         align-items: start !important;
-        margin-top: 100px;
+        margin-top: 50px;
     }
-    #hero h1 {
-        font-size: 4.5rem;
-    }
-        #hero p {
-        font-size: 30px;
-    }
+  
 
 
-    #hero .btn-more {
-        width: 191px;
-        height: 68px;
-        font-size: 24px;
-        padding: 10px;
-    }
+    
 
 
 
@@ -68,16 +51,48 @@
     .open-Navbar {
         display: flex;
     }
+
+    .card_Servicios, .card__Precios {
+        width: 500px;
+    }
 }
 
 
 /*----------------------------- Celu -----------------------------*/
 @media (max-width: 576px) {
-    
+
+    #hero div {
+        margin-top: 100px;
     }
 
+    #hero h1 {
+        font-size: 4.5rem;
+    }
 
+    #hero p {
+        font-size: 30px;
+    }
 
+    #hero .btn-more {
+        width: 191px;
+        height: 68px;
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .img-logo {
+        height: 150px
+    }
+
+    .logo_container span {
+        font-size: 40px;
+    }
+
+    .logo_container p {
+        font-size: 30px;
+    }
+   
+}
 /*----------------------------- disp small -----------------------------*/
 @media (max-width: 450px) {
 
@@ -89,4 +104,8 @@
         #hero div {
             margin-top: 100px;
         }
+
+
+
+   
 }

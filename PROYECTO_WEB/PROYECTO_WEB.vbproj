@@ -3281,6 +3281,7 @@
     <Content Include="Assets\Plugins\sweetalert2\sweetalert.js" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\ServidorDatosNet_GNA.dll" />
+    <Content Include="index.html" />
     <Content Include="obj\Debug\PROYECTO_WEB.vbproj.FileListAbsolute.txt" />
     <Content Include="index.aspx" />
     <Content Include="Web.config" />

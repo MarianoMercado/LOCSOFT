@@ -119,6 +119,7 @@
     color: transparent;
     -webkit-background-clip: text;
     font-size: 20px;
+    font-family: "Kdam Thmor Pro", sans-serif;
 }
 .logo_container p {
     font-size: 14px;
@@ -140,8 +141,9 @@
 #hero {
     font-family: "Kdam Thmor Pro", sans-serif;
     font-family: "Poppins", sans-serif;
+  
     padding-top: 80px;
-    height: calc( 100vh -  80px);
+    height: calc( 100vh - 80px);
     font-size: 20px;
     background-image: url("../img/bg-computers-black.jpg");
     background-size: cover;
@@ -165,14 +167,15 @@
         color: var(--white);
         font-weight: 900;
         text-align: center;
-      
+        font-family: "Kdam Thmor Pro", sans-serif;
     }
-#container_img span{
+#container_img span {
     background: linear-gradient(to top, var(--msj-error), var(--dorado));
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
     font-size: 48px;
+    font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 #hero p {
@@ -228,7 +231,8 @@
     gap: 30px;
 }
 
-#servicios h1 {
+#servicios h1
+{
     color: var(--white);
     font-weight: 900;
     text-align: center;
@@ -239,6 +243,7 @@
     box-shadow: 0 5px 5px var(--dorado);
     box-shadow: var(--back) 0 0 10px;
         color: var(--background);
+    width:300px;
 }
 
     .card_Servicios:hover {
@@ -261,3 +266,145 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
     }
+
+
+/*------------------------- precios ------------------------*/
+#precios {
+    display: flex;
+    flex-direction: column;
+    gap: 35px
+}
+
+#precios h1 {
+    color: var(--back);
+    font-weight: 900;
+    text-align: center;
+}
+
+.card__Precios {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(240, 15%, 9%);
+    --paragraph: hsl(0, 0%, 83%);
+    --line: hsl(240, 9%, 17%);
+    --primary: hsl(189, 92%, 58%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 300px;
+    background-color: hsla(240, 15%, 9%, 1);
+    background-image: radial-gradient( at 88% 40%, hsla(240, 15%, 9%, 1) 0px, transparent 85% ), radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%), radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%), radial-gradient(at 0% 64%, hsl(189, 99%, 26%) 0px, transparent 85%), radial-gradient(at 41% 94%, hsl(189, 97%, 36%) 0px, transparent 85%), radial-gradient(at 100% 99%, hsl(188, 94%, 13%) 0px, transparent 85%);
+    border-radius: 1rem;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+    transition: background-image 1.3s ease;
+}
+
+.card__Precios .card__border {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-image: linear-gradient( 0deg, hsl(0, 0%, 100%) -50%, hsl(0, 0%, 40%) 100% );
+    border-radius: 1rem;
+}
+
+    .card__Precios .card__border::before {
+        content: "";
+        pointer-events: none;
+        position: fixed;
+        z-index: 200;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%), rotate(0deg);
+        transform-origin: left;
+        width: 200%;
+        height: 10rem;
+        background-image: linear-gradient( 0deg, hsla(0, 0%, 100%, 0) 0%, hsl(189, 100%, 50%) 40%, hsl(189, 100%, 50%) 60%, hsla(0, 0%, 40%, 0) 100% );
+        transition: all 0.3s linear;
+    }
+
+
+
+.card__Precios .card_title__container .card_title {
+    font-size: 1rem;
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card__Precios .card_title__container .card_paragraph {
+    margin-top: 0.25rem;
+    width: 100%;
+    color: var(--paragraph);
+    line-height: 1.3;
+    font-family: "Poppins", sans-serif;
+}
+
+.card__Precios .line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--dorado);
+    border: none;
+}
+
+.card__Precios .card__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+
+.card__Precios .card__list .card__list_item {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+    .card__Precios .card__list .card__list_item .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1rem;
+        height: 1rem;
+        background-color: var(--primary);
+        border-radius: 50%;
+    }
+
+        .card__Precios .card__list .card__list_item .check .check_svg {
+            width: 0.75rem;
+            height: 0.75rem;
+            fill: var(--black);
+        }
+
+    .card__Precios .card__list .card__list_item .list_text {
+      
+        color: var(--white);
+    }
+
+.card__Precios .button {
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+    background-image: linear-gradient( 0deg, hsl(189, 92%, 58%), hsl(189, 99%, 26%) 100% );
+    font-size: 0.75rem;
+    color: var(--white);
+    border: 0;
+    border-radius: 9999px;
+    box-shadow: inset 0 -2px 25px -4px var(--white);
+}
+    .card__Precios:hover {
+        background-image: radial-gradient(at 88% 40%, #2e678d 0px, transparent 85%), radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%), radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%), radial-gradient(at 0% 64%, hsl(0deg 0% 0%) 0px, transparent 85%), radial-gradient(at 41% 94%, hsl(0deg 0% 0%) 0px, transparent 85%), radial-gradient(at 100% 99%, hsl(0deg 0% 0%) 0px, transparent 85%);
+        box-shadow: var(--dorado) 0 0 10px;
+        transition: all 0.3s linear;
+    }
+   
+ 
+
