@@ -91,7 +91,18 @@
     .logo_container p {
         font-size: 30px;
     }
-   
+    .contact-container{
+        flex-direction:column
+    }
+
+
+    .card__Precios .card_title__container .card_title {       
+        font-size: 40px;      
+    }
+
+    .card__Precios .card_title__container .card_paragraph {
+        font-size: 27px;
+    }
 }
 /*----------------------------- disp small -----------------------------*/
 @media (max-width: 450px) {

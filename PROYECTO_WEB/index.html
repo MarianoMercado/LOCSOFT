@@ -16,6 +16,9 @@
     <link href="Assets/Content/styles/mediaqueries.css" rel="stylesheet" />
     <!-- img logo -->
     <link rel="shortcut icon" href="Assets/Content/img/logo_2.png" />
+
+    <!-- css aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
     <div class="wrapper">
@@ -67,25 +70,25 @@
         </section>
 
         <!-- servicios -->
-        <section class=" d-flex flex-column w-100 p-3 bg-dark" id="servicios">
-            <h1>¿POR QUÉ ELEGIRNOS?</h1>
+        <section class=" d-flex flex-column w-100 p-3 " id="servicios">
+            <h1 data-aos="zoom-out-right"> ¿POR QUÉ ELEGIRNOS?</h1>
             <div class="row w-100  servicios_Container">
 
-                <div class="card card_Servicios">
+                <div class="card card_Servicios " data-aos="flip-left">
                     <img src="Assets/Content/img/colaboracion.jpg" class="card-img-top" alt="LOCSOFT - calidad - software" />
                     <div class="card-body">
                         <h5 class="card-title ">Calidad</h5>
                         <p class="card-text">Creamos software robusto y confiable que impulsa el éxito de nuestros clientes.</p>
                     </div>
                 </div>
-                <div class="card card_Servicios">
+                <div class="card card_Servicios" data-aos="flip-right">
                     <img src="Assets/Content/img/negocios.jpg" class="card-img-top" alt="LOCSOFT - mercado - empresas" />
                     <div class="card-body">
                         <h5 class="card-title ">Adaptabilidad</h5>
                         <p class="card-text">Nos adaptamos a las necesidades cambiantes del mercado y las empresas.</p>
                     </div>
                 </div>
-                <div class="card card_Servicios">
+                <div class="card card_Servicios" data-aos="flip-up">
                     <img src="Assets/Content/img/clientes.jpg" class="card-img-top" alt="LOCSOFT - clientes - software" />
                     <div class="card-body">
                         <h5 class="card-title ">Colaboración</h5>
@@ -99,15 +102,15 @@
 
         <!-- precios -->
         <section class=" d-flex flex-column w-100 p-3 bg-light" id="precios">
-            <h1>NUESTROS SERVICIOS</h1>
-            <div class="row w-100  servicios_Container">
+            <h1 data-aos="fade-right">NUESTROS SERVICIOS</h1>
+            <div class="row w-100  servicios_Container" data-aos="zoom-in">
                 <div class="card__Precios">
-                    <div class="card__border"></div>
+                    <div class="card__border" ></div>
                     <div class="card_title__container">
                         <span class="card_title">Diseño y Desarrollo de Sitios Web Estáticos. </span>
                         <p class="card_paragraph">
                             Ofrecemos la creación de páginas web elegantes y funcionales que no requieren actualizaciones frecuentes. Perfecto para presentar tu marca o proyecto de manera profesional.
-                           
+
                         </p>
                     </div>
                     <hr class="line" />
@@ -116,13 +119,19 @@
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
                             </span>
-                            <span class="list_text">Diseño predefenido.</span>
+                            <span class="list_text">Diseño personalizado.</span>
                         </li>
                         <li class="card__list_item">
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
                             </span>
                             <span class="list_text">Adaptado a todas las resoluciones.</span>
+                        </li>
+                        <li class="card__list_item">
+                            <span class="check">
+                                <i class="fa fa-check check_svg"></i>
+                            </span>
+                            <span class="list_text">Web estática.</span>
                         </li>
                         <li class="card__list_item">
                             <span class="check">
@@ -142,14 +151,11 @@
                             </span>
                             <span class="list_text">Seguridad SSL.</span>
                         </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Maintain a Positive Attitude</span>
-                        </li>
+
                     </ul>
-                    <button class="button">Más Info.</button>
+                    <a href="#contact" class="button">
+                        Más Info.
+                    </a>
                 </div>
 
                 <div class="card__Precios">
@@ -168,13 +174,19 @@
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
                             </span>
-                            <span class="list_text">Diseño predefenido.</span>
+                            <span class="list_text">Diseño personalizado.</span>
                         </li>
                         <li class="card__list_item">
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
                             </span>
                             <span class="list_text">Adaptado a todas las resoluciones.</span>
+                        </li>
+                        <li class="card__list_item">
+                            <span class="check">
+                                <i class="fa fa-check check_svg"></i>
+                            </span>
+                            <span class="list_text">Registar, modificar y eliminar productos.</span>
                         </li>
                         <li class="card__list_item">
                             <span class="check">
@@ -194,17 +206,14 @@
                             </span>
                             <span class="list_text">Seguridad SSL.</span>
                         </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Maintain a Positive Attitude</span>
-                        </li>
+
                     </ul>
-                    <button class="button">Más Info.</button>
+                    <a href="#contact" class="button">
+                        Más Info.
+                    </a>
                 </div>
-                
-                
+
+
                 <div class="card__Precios">
                     <div class="card__border"></div>
                     <div class="card_title__container">
@@ -220,7 +229,7 @@
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
                             </span>
-                            <span class="list_text">Diseño predefenido.</span>
+                            <span class="list_text">Sistemas corporativos.</span>
                         </li>
                         <li class="card__list_item">
                             <span class="check">
@@ -228,6 +237,8 @@
                             </span>
                             <span class="list_text">Adaptado a todas las resoluciones.</span>
                         </li>
+
+
                         <li class="card__list_item">
                             <span class="check">
                                 <i class="fa fa-check check_svg"></i>
@@ -246,19 +257,78 @@
                             </span>
                             <span class="list_text">Seguridad SSL.</span>
                         </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Maintain a Positive Attitude</span>
-                        </li>
+
                     </ul>
-                    <button class="button">Más Info.</button>
+                    <a href="#contact" class="button">
+                        Más Info.
+                    </a>
                 </div>
 
             </div>
 
         </section>
+
+
+        <!-- contact -->
+        <section id="contact" class=" d-flex flex-column w-100 p-3 ">
+            <h1>Contacto</h1>
+            <h6>¡Su consulta no molesta! Cuéntanos acerca de tu idea/proyecto y LOCSOFT se encargará de llevarla a cabo.</h6>
+            <h6>Nuestros asesores te responderan a la brevedad.</h6>
+
+            <div class="contact-container">
+
+                <div class="contact-container_dev">
+
+                    <ul class="footer-links">
+                        <span class="footer-links-title">No dudes en consultar.</span>
+                        <li>
+                            <a href="mailto:Locsoft_ComputerSoltions@hotmail.com" class="social_email" target="_blank">
+                                <i class="far fa-envelope-open fa-lg mr-3"></i>
+                                Envio Correo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5492646629503" class="social_wsp" target="_blank">
+                                <i class="fab fa-whatsapp fa-lg mr-3"></i>
+                                Bruno Zarza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/5492646629503" class="social_wsp" target="_blank">
+                                <i class="fab fa-whatsapp fa-lg mr-3"></i>
+                                Mariano Mercado
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-container_dev">
+                    <ul class="footer-links">
+                        <span class="footer-links-title">LOCSOFT Computer Solutions.</span>
+                        <li>
+                            Somos una empresa apasionada por el desarrollo de software, y nuestra misión es crear soluciones tecnológicas que impulsen el éxito de nuestros clientes.
+                            Nos enorgullece ofrecer servicios de alta calidad y un enfoque personalizado para cada proyecto.
+                            No nos detenemos después del lanzamiento. Ofrecemos servicios de mantenimiento y soporte para garantizar que las aplicaciones sigan funcionando sin problemas.
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="d-flex align-content-center">
+                <img src="Assets/Content/img/logo_1.png" class="img-logo" />
+                <div class="logo_container  d-flex flex-column justify-content-center align-items-center pt-2">
+                    <span class="text-center">LOCSOFT</span>
+                    <p>Computer Solutions</p>
+                </div>
+            </div>
+
+
+        </footer>
+
     </div>
 
 
@@ -270,5 +340,13 @@
     <script src="Assets/Plugins/AdminLTE/dist/js/adminlte.js"></script>
     <!-- js propio  -->
     <script src="Assets/Content/js/index.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: "ease",
+        });
+    </script>
 </body>
 </html>

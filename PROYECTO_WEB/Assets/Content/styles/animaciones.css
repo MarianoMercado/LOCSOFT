@@ -15,6 +15,33 @@
 .hero-info-btn {
     animation: fade 1s ease-in, slide-up 2s ease-in-out;
 }
+
+
+
+
+
+.social_email:hover {
+    background-color: var(--fire);
+    animation: bounce_613 0.4s linear;
+}
+
+.social_Linkedin:hover {
+    background-color: var(--primary);
+    animation: bounce_613 0.4s linear;
+}
+
+.social_wsp:hover {
+    background-color: var(--msj-succes);
+    animation: bounce_613 0.4s linear;
+}
+
+.social_CV:hover {
+    background-color: var(--secondary);
+    animation: bounce_613 0.4s linear;
+}
+ 
+
+
 /*------------------ Animaciones --------------------*/
 /* Animacion fade */
 /*Funcionamiento: pasa de opacidad 0 a opacidad 1*/
@@ -50,5 +77,27 @@
 
     to {
         transform: translateX(0);
+    }
+}
+
+
+
+
+/* efecto de salto */
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
