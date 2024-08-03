@@ -1,13 +1,19 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>LOCSOF Computer Solutions</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- admin -->
-    <link href="Assets/Plugins/AdminLTE/dist/css/adminlte.min.css" rel="stylesheet" />
+    <link
+      href="Assets/Plugins/AdminLTE/dist/css/adminlte.min.css"
+      rel="stylesheet"
+    />
     <!-- icon -->
-    <link href="Assets/Plugins/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+    <link
+      href="Assets/Plugins/fontawesome-free-5.15.1-web/css/all.css"
+      rel="stylesheet"
+    />
     <!-- estilos propios -->
     <link href="Assets/Content/styles/Style.css" rel="stylesheet" />
     <!-- animaciones -->
@@ -19,318 +25,377 @@
 
     <!-- css aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand m-0 d-flex justify-content-between px-5 py-0"
+        id="nav"
+      >
+        <div class="d-flex align-content-center">
+          <img src="Assets/Content/img/logo_1.png" class="img-logo" />
+          <div
+            class="logo_container d-flex flex-column justify-content-center align-items-center pt-2"
+          >
+            <span class="text-center">LOCSOFT</span>
+            <p>Computer Solutions</p>
+          </div>
+        </div>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand  m-0 d-flex justify-content-between px-5 py-0 " id="nav">
-            <div class="d-flex align-content-center">
-                <img src="Assets/Content/img/logo_1.png" class="img-logo" />
-                <div class="logo_container  d-flex flex-column justify-content-center align-items-center pt-2">
-                    <span class="text-center">LOCSOFT</span>
-                    <p>Computer Solutions</p>
-                </div>
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="#hero">Inicio</a></li>
+          <li><a class="navbar-link" href="#servicios">Sobre nosotros</a></li>
+          <li><a class="navbar-link" href="#precios">Servicios</a></li>
+          <li><a class="navbar-link" href="#contact">Contacto</a></li>
+        </ul>
+        <div class="ml-auto menu-icon toggle-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+
+      <!-- portada -->
+      <section
+        class="d-flex justify-content-center align-items-center w-100 p-5"
+        id="hero"
+      >
+        <div
+          class="d-flex flex-column justify-content-around align-items-center w-50"
+        >
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+            id="container_description"
+          >
+            <h1>DIGITALIZÁ TU NEGOCIO</h1>
+            <p class="p-3">
+              En LOCSOFT, somos apasionados desarrolladores de software con 5
+              años de experiencia en el rubro. Nuestra misión es ofrecer
+              sistemas y aplicaciones personalizadas para empresas, pymes y
+              negocios de todos los rubros. Nos enorgullece satisfacer las
+              necesidades de nuestros clientes a través de soluciones
+              informáticas innovadoras y eficientes.
+            </p>
+          </div>
+          <div class="hero-info-btn">
+            <a href="#about" class="btn-more">
+              Ver Más<i class="fas fa-arrow-down ml-1"></i>
+            </a>
+            <a href="#contact" class="btn-more">
+              Contacto <i class="fas fa-envelope ml-1"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column justify-content-center align-items-center w-50"
+          id="container_img"
+        >
+          <img
+            src="Assets/Content/img/logo_2.png"
+            style="height: 200px"
+            class="img-logo"
+          />
+          <span class="">LOCSOFT</span>
+          <p>Computer Solutions</p>
+        </div>
+      </section>
+
+      <!-- servicios -->
+      <section class="d-flex flex-column w-100 p-3" id="servicios">
+        <h1 data-aos="zoom-out-right">¿POR QUÉ ELEGIRNOS?</h1>
+        <div class="row w-100 servicios_Container">
+          <div class="card card_Servicios" data-aos="flip-left">
+            <img
+              src="Assets/Content/img/colaboracion.jpg"
+              class="card-img-top"
+              alt="LOCSOFT - calidad - software"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Calidad</h5>
+              <p class="card-text">
+                Creamos software robusto y confiable que impulsa el éxito de
+                nuestros clientes.
+              </p>
             </div>
+          </div>
+          <div class="card card_Servicios" data-aos="flip-right">
+            <img
+              src="Assets/Content/img/negocios.jpg"
+              class="card-img-top"
+              alt="LOCSOFT - mercado - empresas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Adaptabilidad</h5>
+              <p class="card-text">
+                Nos adaptamos a las necesidades cambiantes del mercado y las
+                empresas.
+              </p>
+            </div>
+          </div>
+          <div class="card card_Servicios" data-aos="flip-up">
+            <img
+              src="Assets/Content/img/clientes.jpg"
+              class="card-img-top"
+              alt="LOCSOFT - clientes - software"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Colaboración</h5>
+              <p class="card-text">
+                Trabajamos con nuestros clientes para lograr resultados
+                excepcionales.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <ul class="navbar-list">
-                <li><a class="navbar-link" href="#hero">Inicio</a></li>
-                <li><a class="navbar-link" href="#servicios">Sobre nosotros</a></li>
-                <li><a class="navbar-link" href="#precios">Servicios</a></li>
-                <li><a class="navbar-link" href="#contact">Contacto</a></li>
+      <!-- precios -->
+      <section class="d-flex flex-column w-100 p-3 bg-light" id="precios">
+        <h1 data-aos="fade-right">NUESTROS SERVICIOS</h1>
+        <div class="row w-100 servicios_Container" data-aos="zoom-in">
+          <div class="card__Precios">
+            <div class="card__border"></div>
+            <div class="card_title__container">
+              <span class="card_title"
+                >Diseño y Desarrollo de Sitios Web Estáticos.
+              </span>
+              <p class="card_paragraph">
+                Ofrecemos la creación de páginas web elegantes y funcionales que
+                no requieren actualizaciones frecuentes. Perfecto para presentar
+                tu marca o proyecto de manera profesional.
+              </p>
+            </div>
+            <hr class="line" />
+            <ul class="card__list">
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Diseño personalizado.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text"
+                  >Adaptado a todas las resoluciones.</span
+                >
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Web estática.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Dominio.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Hosting</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Seguridad SSL.</span>
+              </li>
             </ul>
-            <div class="ml-auto menu-icon toggle-menu">
-                <i class="fas fa-bars "></i>
+            <a href="#contact" class="button"> Más Info. </a>
+          </div>
+
+          <div class="card__Precios">
+            <div class="card__border"></div>
+            <div class="card_title__container">
+              <span class="card_title"
+                >Desarrollo de Plataformas Autoadministrables.
+              </span>
+              <p class="card_paragraph">
+                Creamos sitios web con paneles de control intuitivos para que
+                puedas actualizar fácilmente tus contenidos, como blogs,
+                noticias o productos.
+              </p>
             </div>
-        </nav>
+            <hr class="line" />
+            <ul class="card__list">
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Diseño personalizado.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text"
+                  >Adaptado a todas las resoluciones.</span
+                >
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text"
+                  >Registar, modificar y eliminar productos.</span
+                >
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Dominio.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Hosting</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Seguridad SSL.</span>
+              </li>
+            </ul>
+            <a href="#contact" class="button"> Más Info. </a>
+          </div>
 
-        <!-- portada -->
-        <section class=" d-flex  justify-content-center align-items-center w-100 p-5" id="hero">
-            <div class=" d-flex flex-column justify-content-around align-items-center  w-50">
-
-                <div class="d-flex flex-column justify-content-center align-items-center" id="container_description">
-                    <h1>DIGITALIZÁ TU NEGOCIO</h1>
-                    <p class="p-3">En LOCSOFT, somos apasionados desarrolladores de software con 5 años de experiencia en el rubro. Nuestra misión es ofrecer sistemas y aplicaciones personalizadas para empresas, pymes y negocios de todos los rubros. Nos enorgullece satisfacer las necesidades de nuestros clientes a través de soluciones informáticas innovadoras y eficientes. </p>
-                </div>
-                <div class="hero-info-btn">
-                    <a href="#about" class="btn-more">
-                        Ver Más<i class="fas fa-arrow-down ml-1"></i>
-                    </a>
-                    <a href="#contact" class="btn-more">
-                        Contacto <i class="fas fa-envelope ml-1"></i>
-                    </a>
-                </div>
+          <div class="card__Precios">
+            <div class="card__border"></div>
+            <div class="card_title__container">
+              <span class="card_title"
+                >Soluciones a Medida y personalizadas.
+              </span>
+              <p class="card_paragraph">
+                Ofrecemos desarrollo personalizado para satisfacer tus
+                necesidades específicas. Ya sea una aplicación web o móvil, nos
+                adaptamos a lo que requieres.
+              </p>
             </div>
-            <div class="d-flex flex-column justify-content-center align-items-center w-50" id="container_img">
-                <img src="Assets/Content/img/logo_2.png" style="height: 200px" class="img-logo" />
-                <span class="">LOCSOFT</span>
-                <p>Computer Solutions</p>
-            </div>
+            <hr class="line" />
+            <ul class="card__list">
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Sistemas corporativos.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text"
+                  >Adaptado a todas las resoluciones.</span
+                >
+              </li>
 
-        </section>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Dominio.</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Hosting</span>
+              </li>
+              <li class="card__list_item">
+                <span class="check">
+                  <i class="fa fa-check check_svg"></i>
+                </span>
+                <span class="list_text">Seguridad SSL.</span>
+              </li>
+            </ul>
+            <a href="#contact" class="button"> Más Info. </a>
+          </div>
+        </div>
+      </section>
 
-        <!-- servicios -->
-        <section class=" d-flex flex-column w-100 p-3 " id="servicios">
-            <h1 data-aos="zoom-out-right"> ¿POR QUÉ ELEGIRNOS?</h1>
-            <div class="row w-100  servicios_Container">
+      <!-- contact -->
+      <section id="contact" class="d-flex flex-column w-100 p-3">
+        <h1>Contacto</h1>
+        <h6>
+          ¡Su consulta no molesta! Cuéntanos acerca de tu idea/proyecto y
+          LOCSOFT se encargará de llevarla a cabo.
+        </h6>
+        <h6>Nuestros asesores te responderan a la brevedad.</h6>
 
-                <div class="card card_Servicios " data-aos="flip-left">
-                    <img src="Assets/Content/img/colaboracion.jpg" class="card-img-top" alt="LOCSOFT - calidad - software" />
-                    <div class="card-body">
-                        <h5 class="card-title ">Calidad</h5>
-                        <p class="card-text">Creamos software robusto y confiable que impulsa el éxito de nuestros clientes.</p>
-                    </div>
-                </div>
-                <div class="card card_Servicios" data-aos="flip-right">
-                    <img src="Assets/Content/img/negocios.jpg" class="card-img-top" alt="LOCSOFT - mercado - empresas" />
-                    <div class="card-body">
-                        <h5 class="card-title ">Adaptabilidad</h5>
-                        <p class="card-text">Nos adaptamos a las necesidades cambiantes del mercado y las empresas.</p>
-                    </div>
-                </div>
-                <div class="card card_Servicios" data-aos="flip-up">
-                    <img src="Assets/Content/img/clientes.jpg" class="card-img-top" alt="LOCSOFT - clientes - software" />
-                    <div class="card-body">
-                        <h5 class="card-title ">Colaboración</h5>
-                        <p class="card-text">Trabajamos con nuestros clientes para lograr resultados excepcionales.</p>
-                    </div>
-                </div>
+        <div class="contact-container">
+          <div class="contact-container_dev">
+            <ul class="footer-links">
+              <span class="footer-links-title">No dudes en consultar.</span>
+              <li>
+                <a
+                  href="mailto:Locsoft_ComputerSoltions@hotmail.com"
+                  class="social_email"
+                  target="_blank"
+                >
+                  <i class="far fa-envelope-open fa-lg mr-3"></i>
+                  Envio Correo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5492646629503"
+                  class="social_wsp"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp fa-lg mr-3"></i>
+                  Bruno Zarza
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/5492646629503"
+                  class="social_wsp"
+                  target="_blank"
+                >
+                  <i class="fab fa-whatsapp fa-lg mr-3"></i>
+                  Mariano Mercado
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-container_dev">
+            <ul class="footer-links">
+              <span class="footer-links-title"
+                >LOCSOFT Computer Solutions.</span
+              >
+              <li>
+                Somos una empresa apasionada por el desarrollo de software, y
+                nuestra misión es crear soluciones tecnológicas que impulsen el
+                éxito de nuestros clientes. Nos enorgullece ofrecer servicios de
+                alta calidad y un enfoque personalizado para cada proyecto. No
+                nos detenemos después del lanzamiento. Ofrecemos servicios de
+                mantenimiento y soporte para garantizar que las aplicaciones
+                sigan funcionando sin problemas.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            </div>
-
-        </section>
-
-        <!-- precios -->
-        <section class=" d-flex flex-column w-100 p-3 bg-light" id="precios">
-            <h1 data-aos="fade-right">NUESTROS SERVICIOS</h1>
-            <div class="row w-100  servicios_Container" data-aos="zoom-in">
-                <div class="card__Precios">
-                    <div class="card__border" ></div>
-                    <div class="card_title__container">
-                        <span class="card_title">Diseño y Desarrollo de Sitios Web Estáticos. </span>
-                        <p class="card_paragraph">
-                            Ofrecemos la creación de páginas web elegantes y funcionales que no requieren actualizaciones frecuentes. Perfecto para presentar tu marca o proyecto de manera profesional.
-
-                        </p>
-                    </div>
-                    <hr class="line" />
-                    <ul class="card__list">
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Diseño personalizado.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Adaptado a todas las resoluciones.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Web estática.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Dominio.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Hosting</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Seguridad SSL.</span>
-                        </li>
-
-                    </ul>
-                    <a href="#contact" class="button">
-                        Más Info.
-                    </a>
-                </div>
-
-                <div class="card__Precios">
-                    <div class="card__border"></div>
-                    <div class="card_title__container">
-                        <span class="card_title">Desarrollo de Plataformas Autoadministrables. </span>
-                        <p class="card_paragraph">
-                            Creamos sitios web con paneles de control intuitivos para que puedas actualizar fácilmente tus contenidos, como blogs, noticias o productos.
-
-
-                        </p>
-                    </div>
-                    <hr class="line" />
-                    <ul class="card__list">
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Diseño personalizado.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Adaptado a todas las resoluciones.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Registar, modificar y eliminar productos.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Dominio.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Hosting</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Seguridad SSL.</span>
-                        </li>
-
-                    </ul>
-                    <a href="#contact" class="button">
-                        Más Info.
-                    </a>
-                </div>
-
-
-                <div class="card__Precios">
-                    <div class="card__border"></div>
-                    <div class="card_title__container">
-                        <span class="card_title">Soluciones a Medida y personalizadas. </span>
-                        <p class="card_paragraph">
-                            Ofrecemos desarrollo personalizado para satisfacer tus necesidades específicas. Ya sea una aplicación web o móvil, nos adaptamos a lo que requieres.
-
-                        </p>
-                    </div>
-                    <hr class="line" />
-                    <ul class="card__list">
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Sistemas corporativos.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Adaptado a todas las resoluciones.</span>
-                        </li>
-
-
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Dominio.</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Hosting</span>
-                        </li>
-                        <li class="card__list_item">
-                            <span class="check">
-                                <i class="fa fa-check check_svg"></i>
-                            </span>
-                            <span class="list_text">Seguridad SSL.</span>
-                        </li>
-
-                    </ul>
-                    <a href="#contact" class="button">
-                        Más Info.
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- contact -->
-        <section id="contact" class=" d-flex flex-column w-100 p-3 ">
-            <h1>Contacto</h1>
-            <h6>¡Su consulta no molesta! Cuéntanos acerca de tu idea/proyecto y LOCSOFT se encargará de llevarla a cabo.</h6>
-            <h6>Nuestros asesores te responderan a la brevedad.</h6>
-
-            <div class="contact-container">
-
-                <div class="contact-container_dev">
-
-                    <ul class="footer-links">
-                        <span class="footer-links-title">No dudes en consultar.</span>
-                        <li>
-                            <a href="mailto:Locsoft_ComputerSoltions@hotmail.com" class="social_email" target="_blank">
-                                <i class="far fa-envelope-open fa-lg mr-3"></i>
-                                Envio Correo
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/5492646629503" class="social_wsp" target="_blank">
-                                <i class="fab fa-whatsapp fa-lg mr-3"></i>
-                                Bruno Zarza
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/5492646629503" class="social_wsp" target="_blank">
-                                <i class="fab fa-whatsapp fa-lg mr-3"></i>
-                                Mariano Mercado
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact-container_dev">
-                    <ul class="footer-links">
-                        <span class="footer-links-title">LOCSOFT Computer Solutions.</span>
-                        <li>
-                            Somos una empresa apasionada por el desarrollo de software, y nuestra misión es crear soluciones tecnológicas que impulsen el éxito de nuestros clientes.
-                            Nos enorgullece ofrecer servicios de alta calidad y un enfoque personalizado para cada proyecto.
-                            No nos detenemos después del lanzamiento. Ofrecemos servicios de mantenimiento y soporte para garantizar que las aplicaciones sigan funcionando sin problemas.
-
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- footer -->
-        <footer id="footer">
-            <div class="d-flex align-content-center">
-                <img src="Assets/Content/img/logo_1.png" class="img-logo" />
-                <div class="logo_container  d-flex flex-column justify-content-center align-items-center pt-2">
-                    <span class="text-center">LOCSOFT</span>
-                    <p>Computer Solutions</p>
-                </div>
-            </div>
-
-
-        </footer>
-
+      <!-- footer -->
+      <footer id="footer">
+        <div class="d-flex align-content-center">
+          <img src="Assets/Content/img/logo_1.png" class="img-logo" />
+          <div
+            class="logo_container d-flex flex-column justify-content-center align-items-center pt-2"
+          >
+            <span class="text-center">LOCSOFT</span>
+            <p>Computer Solutions</p>
+          </div>
+        </div>
+      </footer>
     </div>
-
 
     <!-- jquery -->
     <script src="Assets/Plugins/jquery/jquery.3.5.1.min.js"></script>
@@ -343,10 +408,10 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            easing: "ease",
-        });
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+      });
     </script>
-</body>
+  </body>
 </html>
